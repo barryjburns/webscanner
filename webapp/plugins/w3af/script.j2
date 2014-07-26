@@ -1,0 +1,14 @@
+plugins
+output xml_file
+output config xml_file
+set output_file {{ output_file }}
+back
+audit sqli, xss, csrf
+grep all
+crawl web_spider
+back
+target
+set target http://{{ host }}/
+back
+start
+exit
